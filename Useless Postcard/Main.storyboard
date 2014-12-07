@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2qC-n1-iY0">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--Root View Controller Scene-->
+        <scene sceneID="iO7-lo-DXK">
+            <objects>
+                <viewController storyboardIdentifier="pirate" title="Root View Controller Scene" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qtt-Cs-OBf" sceneMemberID="viewController">
+                    <imageView key="view" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pirate.jpg" id="5IP-B5-HAc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <navigationItem key="navigationItem" title="NavBar" id="eFA-G6-0N2">
+                        <barButtonItem key="rightBarButtonItem" title="View Message" id="mHe-th-cf9">
+                            <connections>
+                                <segue destination="eld-Gl-5d2" kind="show" id="Cwl-mp-aqb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aYd-p9-TEg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4380" y="123"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="rRT-qf-VJT">
+            <objects>
+                <viewController storyboardIdentifier="greninja" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eld-Gl-5d2" customClass="ViewController" customModule="Useless_Postcard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1QF-Tv-esz"/>
+                        <viewControllerLayoutGuide type="bottom" id="WWp-VE-6So"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ytV-rb-Aqy">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mewsponge.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="PqX-1C-wCD">
+                                <rect key="frame" x="10" y="149" width="254" height="381"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="most beautiful app ever :::DDD" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yAk-0G-yF3">
+                                <rect key="frame" x="16" y="189" width="293" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="do u agrii???" borderStyle="roundedRect" placeholder="name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yLI-16-HUg">
+                                <rect key="frame" x="27" y="225" width="308" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="do you agreeeee??? :::DDDD y/n" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dwR-l3-NVs">
+                                <rect key="frame" x="40" y="263" width="333" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="messageLabel" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdk-Gf-59V">
+                                <rect key="frame" x="272" y="86" width="222" height="67"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a60-0f-bXe">
+                                <rect key="frame" x="16" y="142" width="158" height="39"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="18"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" title="send mail">
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendMailButtonPressed:" destination="eld-Gl-5d2" eventType="touchUpInside" id="HR3-9W-eIq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="9Zn-yg-sfP"/>
+                    <connections>
+                        <outlet property="messageLabel" destination="hdk-Gf-59V" id="qIA-gF-3IP"/>
+                        <outlet property="messagetextfield" destination="dwR-l3-NVs" id="k8U-c7-bZp"/>
+                        <outlet property="nametextfield" destination="yLI-16-HUg" id="dWw-0L-SVY"/>
+                        <outlet property="send_mail_button" destination="a60-0f-bXe" id="rcg-ug-QAr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F0G-d8-01d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5094" y="123"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JiC-sX-nii">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jSP-gj-61v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController storyboardIdentifier="navgayshun" automaticallyAdjustsScrollViewInsets="NO" id="2qC-n1-iY0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Xoc-HK-NuA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="qtt-Cs-OBf" kind="relationship" relationship="rootViewController" id="bdp-k6-fZv"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="3568" y="123"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mewsponge.jpg" width="640" height="480"/>
+        <image name="pirate.jpg" width="1920" height="1200"/>
+    </resources>
+</document>
